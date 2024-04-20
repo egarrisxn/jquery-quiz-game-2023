@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Quiz Game</title>
+  </head>
+  <body>
+    <div id="quiz-container"></div>
+    <div class="page one">
+      <!-- Display landing page -->
+      <h2 class="quiz-header">Quiz Game: Coding Edition</h2>
+      <p>
+        Try your luck at these code-related questions in the alloted time given.
+        Wrong answers will deduct ten seconds from your time. Scores will be
+        logged and the high scores will be listed.
+      </p>
+      <button class="btn-start">Start</button>
+    </div>
+    <div class="page two" id="quizQuestions">
+      <!-- Display quiz questions -->
+      <h5 class="quiz-header"></h5>
+      <h6 class="question"></h6>
+      <ul>
+        <li>
+          <input type="radio" id="opt-a" name="options" value="a" />
+          <label for="opt-a" id="label-a"></label>
+        </li>
+        <li>
+          <input type="radio" id="opt-b" name="options" value="b" />
+          <label for="opt-b" id="label-b"></label>
+        </li>
+        <li>
+          <input type="radio" id="opt-c" name="options" value="c" />
+          <label for="opt-c" id="label-c"></label>
+        </li>
+        <li>
+          <input type="radio" id="opt-d" name="options" value="d" />
+          <label for="opt-d" id="label-d"></label>
+        </li>
+      </ul>
+      <p class="time">Time Remaining: <span class="timer"></span></p>
+      <p class="points">Score: 0</p>
+      <button class="btn-submit">Next</button>
+    </div>
+
+    <div class="page three">
+      <!-- Display final score -->
+      <h2 class="score-page">Quiz Completed!</h2>
+      <p>Your final score is: <span class="final-score"></span>.</p>
+      <p>Please submit your name:</p>
+      <input type="text" />
+      <button class="btn-score">Submit</button>
+    </div>
+
+    <div class="page four">
+      <!-- Display high scores -->
+      <h2>High Scores</h2>
+      <p class="winner"></p>
+      <button class="btn-restart">Restart</button>
+    </div>
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Local JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
