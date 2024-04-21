@@ -20,61 +20,80 @@
     />
     <!-- Local CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Quiz Game</title>
+    <title>The Quiz Game</title>
   </head>
   <body>
     <div id="quiz-container"></div>
+
+    <!-- Display landing page -->
     <div class="page one">
-      <!-- Display landing page -->
-      <h2 class="quiz-header">Quiz Game: Coding Edition</h2>
-      <p>
-        Try your luck at these code-related questions in the alloted time given.
-        Wrong answers will deduct ten seconds from your time. Scores will be
-        logged and the high scores will be listed.
-      </p>
-      <button class="btn-start">Start</button>
+      <nav class="landing-nav">
+        <button href="#" class="btn-highscore">View High Scores</button>
+      </nav>
+      <main>
+        <h2 class="landing-header">Quiz Game: Code Edition</h2>
+        <p class="landing-subheader">
+          Try your luck at these code-related questions in the alloted time
+          given. Wrong answers will deduct ten seconds from your time. Scores
+          will be logged and the high scores will be listed.
+        </p>
+        <button class="btn-start">Start</button>
+      </main>
     </div>
+
+    <!-- Display quiz questions -->
     <div class="page two" id="quizQuestions">
-      <!-- Display quiz questions -->
-      <h5 class="quiz-header"></h5>
-      <h6 class="question"></h6>
-      <ul>
-        <li>
-          <input type="radio" id="opt-a" name="options" value="a" />
-          <label for="opt-a" id="label-a"></label>
-        </li>
-        <li>
-          <input type="radio" id="opt-b" name="options" value="b" />
-          <label for="opt-b" id="label-b"></label>
-        </li>
-        <li>
-          <input type="radio" id="opt-c" name="options" value="c" />
-          <label for="opt-c" id="label-c"></label>
-        </li>
-        <li>
-          <input type="radio" id="opt-d" name="options" value="d" />
-          <label for="opt-d" id="label-d"></label>
-        </li>
-      </ul>
-      <p class="time">Time Remaining: <span class="timer"></span></p>
-      <p class="points">Score: 0</p>
-      <button class="btn-submit">Next</button>
+      <nav class="quiz-nav">
+        <h5 class="time">Time: <span class="timer"></span></h5>
+        <h5 class="points">Score: 0</h5>
+      </nav>
+      <main>
+        <h5 class="quiz-header"></h5>
+        <h6 class="question"></h6>
+        <ul>
+          <li>
+            <input type="radio" id="opt-a" name="options" value="a" />
+            <label for="opt-a" id="label-a"></label>
+          </li>
+          <li>
+            <input type="radio" id="opt-b" name="options" value="b" />
+            <label for="opt-b" id="label-b"></label>
+          </li>
+          <li>
+            <input type="radio" id="opt-c" name="options" value="c" />
+            <label for="opt-c" id="label-c"></label>
+          </li>
+          <li>
+            <input type="radio" id="opt-d" name="options" value="d" />
+            <label for="opt-d" id="label-d"></label>
+          </li>
+        </ul>
+        <button class="btn-submit">Next</button>
+      </main>
     </div>
 
+    <!-- Display final score -->
     <div class="page three">
-      <!-- Display final score -->
-      <h2 class="score-page">Quiz Completed!</h2>
-      <p>Your final score is: <span class="final-score"></span>.</p>
-      <p>Please submit your name:</p>
-      <input type="text" />
-      <button class="btn-score">Submit</button>
+      <nav class="ghost-nav"></nav>
+      <main>
+        <h2 class="score-header">Quiz Completed!</h2>
+        <p>Final Score: <span class="final-score"></span></p>
+        <p>Enter your name below.</p>
+        <input type="text" />
+        <button class="btn-score">Submit</button>
+      </main>
     </div>
 
+    <!-- Display high scores -->
     <div class="page four">
-      <!-- Display high scores -->
-      <h2>High Scores</h2>
-      <p class="winner"></p>
-      <button class="btn-restart">Restart</button>
+      <nav class="highscore-nav">
+        <button class="btn-clear">Clear High Scores</button>
+      </nav>
+      <main>
+        <h2 class="highscore-header">High Scores</h2>
+        <p class="winner"></p>
+        <button class="btn-restart">Home</button>
+      </main>
     </div>
 
     <!-- jQuery JS -->

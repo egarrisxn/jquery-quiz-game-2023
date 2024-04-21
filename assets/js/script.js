@@ -110,6 +110,14 @@ const showPage = (className) => {
 
 showPage(".one");
 
+// Event listener for link to high score page
+$(".btn-highscore").click(function () {
+  let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+  highScores.sort((a, b) => b.score - a.score);
+  localStorage.setItem("highScores", JSON.stringify(highScores));
+  showHighScores(highScores);
+});
+
 // Event listener for starting the quiz
 $(".btn-start").click(function () {
   showPage(".two");
@@ -151,7 +159,7 @@ const setTime = () => {
   timerInterval = setInterval(function () {
     timeLeft--;
     console.log("seconds left");
-    timeEl.textContent = timeLeft + " seconds left.";
+    timeEl.textContent = timeLeft;
     if (timeLeft <= 0) {
       endQuiz();
     }
@@ -161,17 +169,11 @@ const setTime = () => {
 // Event listener for submitting the user's score
 $(".btn-score").click(function () {
   userName = $("input[type='text']").val();
-  // Retrieve existing high scores from localStorage
   let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-  // Add the current score to the high scores array
   highScores.push({ name: userName, score: userScore });
-  // Sort high scores by score in descending order
   highScores.sort((a, b) => b.score - a.score);
-  // Save the updated high scores back to localStorage
   localStorage.setItem("highScores", JSON.stringify(highScores));
-  // Display high scores
   showHighScores(highScores);
-  // Reset userScore for the next game
   userScore = 0;
 });
 
@@ -185,10 +187,16 @@ const showHighScores = (scores) => {
   $(".winner").html(winnerText);
 };
 
+// Event listener for clearing high scores
+$(".btn-clear").click(function () {
+  localStorage.removeItem("highScores");
+  $(".winner").empty();
+});
+
 // Event listener for restarting the quiz
 $(".btn-restart").click(function () {
   showPage(".one");
-  $(".quiz-header").text("Code Challenge");
+  $(".quiz-header").text("Quiz Game: Code Edition");
   userScore = 0;
   $("input[type='text']").val("");
 });

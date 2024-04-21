@@ -1,25 +1,18 @@
-:root {
-  background-color: #faf9f6;
-}
-
-* {
-  box-sizing: border-box;
-  text-align: center;
-  color: #161616;
-}
-
 /* fonts */
+.landing-header,
+.score-header,
 .quiz-header,
-h2 {
-  font-family: "Ultra", serif;
-}
-.btn-start,
-.btn-submit,
-.btn-score,
-.btn-restart,
-.question,
+.highscore-header,
 .time,
 .points,
+.btn-submit,
+.btn-start,
+.btn-score,
+.btn-restart {
+  font-family: "Ultra", serif;
+}
+
+.question,
 label,
 p {
   font-family: "PT Serif", serif;
@@ -27,39 +20,102 @@ p {
 
 /* body */
 body {
+  background-color: #faf9f6;
+  color: #161616;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
 }
 
-.page {
-  width: 50%;
+/*! nav(s) */
+.landing-nav,
+.highscore-nav {
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+}
+.quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.ghost-nav {
+  display: flex;
+  padding: 10px;
 }
 
+/* landing page header */
+.landing-header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* landing page subheader */
+.landing-subheader {
+  text-align: center;
+}
+
+/* quiz list */
 ul {
   list-style-type: none;
-  padding: 0;
 }
 
+/* final score header */
+.score-header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* final score number */
+.final-score {
+  text-align: center;
+  font-weight: bold;
+  color: #ff5b5b;
+}
+
+/*! buttons */
 .btn-start,
 .btn-submit,
 .btn-score,
-.btn-restart {
+.btn-restart,
+.btn-highscore,
+.btn-clear {
   background-color: #3c5068;
   border-radius: 4px;
   color: #faf9f6;
-  padding: 4px 12px;
+  padding: 1px 8px;
+  text-align: center;
   opacity: 1;
   transition: 0.5s;
+  margin-top: 10px;
 }
 
 .btn-start:hover,
 .btn-submit:hover,
 .btn-score:hover,
-.btn-restart:hover {
+.btn-restart:hover,
+.btn-highscore:hover,
+.btn-clear:hover {
   cursor: pointer;
   background-color: #3c5068;
   opacity: 0.6;
+}
+
+.btn-score {
+  margin-top: 20px;
 }
