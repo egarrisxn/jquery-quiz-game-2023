@@ -6,6 +6,8 @@ _Initially created in April of 2023 for my UCF Full-Stack Web Development Bootca
 
 ## Description
 
+![Screenshot 2024-04-20 183316](https://github.com/EGARRISXN/quiz-game/assets/126130230/1bd702fe-69cd-4315-8124-881f56896de8)
+
 ## Technologies
 
 ## Installation
