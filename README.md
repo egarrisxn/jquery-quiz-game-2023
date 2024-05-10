@@ -16,6 +16,7 @@ A simple and easy to use quiz game, consisting of a few coding questions to test
 - CSS3 (Bootstrap): Styling and layout.
 - JavaScript (jQuery): Interactivity and dynamic behavior.
 - Local Storage: Store data locally within the browser for enhanced user experience.
+- GitHub Pages: Used to host and publish application.
 
 ## Installation
 
