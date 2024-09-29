@@ -1,6 +1,6 @@
 # Quiz Game
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/quiz-game)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/quiz-game) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/quiz-game)
 
 _Initially created in the spring of 2023 during my UCF Full-Stack Web Development Bootcamp._
 
