@@ -1,14 +1,14 @@
 # jQuery Quiz Game 2023
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/jquery-quiz-game-2023) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/jquery-quiz-game-2023)
-
 _Initially created in the spring of 2023 during my UCF Full-Stack Web Development Bootcamp._
+
+![Screenshot 2024-04-20 183316](https://github.com/EGARRISXN/quiz-game/assets/126130230/1bd702fe-69cd-4315-8124-881f56896de8)
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/jquery-quiz-game-2023) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/jquery-quiz-game-2023)
 
 ## Description
 
 A simple and easy to use quiz game, consisting of a few coding questions to test your basic knowledge.
-
-![Screenshot 2024-04-20 183316](https://github.com/EGARRISXN/quiz-game/assets/126130230/1bd702fe-69cd-4315-8124-881f56896de8)
 
 ## Technologies
 
